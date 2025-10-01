@@ -60,6 +60,8 @@ yarn dev
 ## 📂 Project Structure
 The codebase follows a standard React/Vite structure, detailing all custom components:
 
+<pre>
+
 scooter-website/
 ├── src/
 │   ├── assets/                 # Static images (scooter, logos, icons)
@@ -78,6 +80,7 @@ scooter-website/
 ├── public/                     # Files copied directly to the build root
 └── package.json                # Project dependencies and scripts
 
+</pre>
 
 ## 💡Component Focus: Slider.jsx
 The main slider component (Slider.jsx) utilizes react-fast-marquee to ensure a smooth, continuous loop of partner logos without jitter or pausing.
