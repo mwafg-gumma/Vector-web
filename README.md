@@ -88,14 +88,22 @@ The main slider component (Slider.jsx) utilizes react-fast-marquee to ensure a s
 Implementation Example:
 
 <pre>
-    import Marquee from 'react-fast-marquee';
-      <div className="mx-2">
-                    <Marquee style>
-                        <div className="md:mx-10 mx-1">
-                            <img src="Img" alt="Img-Slider" />
-                        </div>
-                    </Marquee>
-                </div>
+import Marquee from 'react-fast-marquee';
+
+// ... inside the Slider component
+<Marquee speed={50} gradient={false}>
+  {/* Map through your logos here */}
+  {scooterLogos.map((logo) => (
+    <img 
+      key={logo.id} 
+      src={logo.src} 
+      alt={logo.alt} 
+      className="h-12 w-auto mx-10 grayscale opacity-70 transition hover:opacity-100" 
+    />
+  ))}
+</Marquee>
+
+
 </pre>
 
 ## 🚢 Production Build
